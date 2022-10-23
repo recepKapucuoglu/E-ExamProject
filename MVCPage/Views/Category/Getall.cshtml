@@ -1,0 +1,74 @@
+﻿
+<h1>
+    category listesi
+</h1>
+
+<hr />
+<div>
+    @DateTime.Now.ToString()
+</div>
+
+<br></br>
+
+@{
+    string bugununTarihi = DateTime.Now.ToShortDateString();
+    string message = "burası categorileri gösterir";
+}
+
+
+<div>
+    <h4>
+        <div>bugünün tarih : @bugununTarihi</div>
+        <div>message: @message</div>
+    </h4>
+</div>
+
+
+<div>
+    @{
+        string date2 = DateTime.Now.ToString();
+        string message2 = "hello razorpage";
+
+
+        @:böylede mesahj yazabilirsin:@message2 <br/>
+        @:tarih:@date2
+    }
+</div>
+
+
+
+<div>
+    @{
+        string date3 = DateTime.Now.ToString();
+        string message3 = "hello razorpage";
+
+
+        <text>böylede mesah yazabilirsin </text> @message3 
+         <br></br>
+        <text>tarih</text> @date3;
+    }
+</div>
+
+
+<div>
+    <h5>
+        ıf -else 
+    </h5>
+    <div>
+        @if(DateTime.IsLeapYear(DateTime.Now.Year))
+        {
+            @DateTime.Now.Year @:yılı artık yıldır
+        }
+
+        else 
+        {
+            @DateTime.Now.Year @:yılı artık yıl degil.
+        }
+
+    </div>
+</div>
+
+
+  <div>
+
+  </div>

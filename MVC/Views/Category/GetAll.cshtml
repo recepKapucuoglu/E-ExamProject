@@ -1,0 +1,24 @@
+﻿
+<h1>
+    category listesi
+</h1>
+
+<hr/>
+<div>
+   @DateTime.Now.ToString()   
+</div>
+
+<br></br>
+
+@{
+    string bugununTarihi = DateTime.Now.ToShortDateString();
+    string message = "burası categorileri gösterir";
+}
+
+
+<div>
+    <h4>
+       <div>bugünün tarih : @bugununTarihi</div>
+       <div>message: @message</div>
+    </h4>
+</div>
